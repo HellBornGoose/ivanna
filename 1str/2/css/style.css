@@ -1,3 +1,4 @@
+﻿﻿
 @media (min-width: 300px) and (max-width: 370px) {
    .person-detail{
     height: 180px;
@@ -27,6 +28,7 @@
   #btn-header {
     display: none;
   }
+  
 
 }
 @media only screen and (max-width : 768px) {
@@ -211,7 +213,7 @@ h2 {
 
 .top-header {
     background: rgba(255,255,255,0.96) !important;
-    
+    position: fixed;
     width: 100%;
     z-index: 9999;
     border-bottom: 1px solid #D6D6D6;
@@ -251,7 +253,7 @@ ul.nav {
     margin: 0;
     padding: 0;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>p {
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -259,8 +261,13 @@ ul.nav {
     -ms-transition: all .5s ease 0s;
     color: #333;
 }
-.navbar-default .navbar-nav>li>a:hover {
-    color: #42b3e5;
+.navbar-default .navbar-nav>li>a {
+  transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  -ms-transition: all .5s ease 0s;
+  color: #333;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000;
@@ -270,7 +277,9 @@ ul.nav {
     border-color: #fff;
     margin: 4px 0 0;
 }
-
+.mainMenu li p a{
+  color: #777;
+}
 /*slider area*/
 
 .slider-row {
@@ -315,7 +324,7 @@ ul.nav {
 .carousel-control {
     width: 5%;
 }
-/* .carousel-inner {
+/*.carousel-inner {
     background: -webkit-linear-gradient(left, #000, blue);
     /* For Safari 5.1 to 6.0
     background: -o-linear-gradient(left, #000, blue);
@@ -323,8 +332,8 @@ ul.nav {
     background: -moz-linear-gradient(left, #000, blue);
     /* For Firefox 3.6 to 15
     background: linear-gradient(to left, #000, blue);
-    /* Standard syntax */
- /* } */
+    /* Standard syntax 
+}*//*
 .item {
     position: relative;
 }
@@ -549,7 +558,12 @@ h2 {
 }
 .list-services li {
   position: relative;
+  
   padding-left: 12px;
+  color: rgb(29, 28, 28);
+}
+.list-services a{
+  color: rgb(29, 28, 28);
 }
 .list-services li:before {
   position: absolute;
@@ -814,7 +828,7 @@ h2 {
 /* New Styles */
 footer {
   background: #1F1E1E;
-  
+  padding-top: 20px;
 }
 .logo {
   display: inline-block;
@@ -887,14 +901,25 @@ footer {
   justify-content: space-around;
   flex-direction: column;
 }
+.mainMenu li p {
+  font-size: 17px;
+  color: #776B6B;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 12px;
+}
 .mainMenu li a {
   font-size: 17px;
   color: #776B6B;
   line-height: 24px;
   font-family: 'Open Sans', sans-serif;
-  padding: 10px 12px;
+  padding: 0px 12px;
 }
 
+.mainMenu > li p:hover {
+  color: #E73437 !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .mainMenu > li a:hover {
   color: #E73437 !important;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -915,7 +940,7 @@ footer {
   margin-left: 10px
 }
 
-.phoneList li a {
+.phoneList li p {
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 12px;
@@ -924,7 +949,7 @@ footer {
   padding-left: 8px;
 
 }
-.phoneList li a:hover {
+.phoneList li p:hover {
   color: #776B6B;
   text-shadow: none;
 }
@@ -1093,7 +1118,6 @@ footer {
 }
 .wthree-text ul li {
     display: inline-block;
-    
 }
 .wthree-text ul li:nth-child(2) {
     float: right;
@@ -1249,14 +1273,18 @@ select.form-control {
 .checkbox-block ul {
   padding-left: 0;
 }
-.title-main-w3ls h4 {
-  font-size: 22px;
+.title-main-w3ls p {
+  font-size: 15px;
   color: #42b3e5;
   margin-top: 0;
   margin-bottom: 15px;
   display: block;
   color: #737373;
 }
+.online-span{
+  font-size: 25px;
+}
+.title-main-w3ls p span
 .select2-container--default .select2-selection--multiple {
   color: #999;
   outline: none;
@@ -1421,6 +1449,7 @@ select.form-control {
   background: #C3C0C0;
   transition: 0.2s background;
 }
+
 .red-text {
   color: #c64d5e;
 }
@@ -1530,7 +1559,7 @@ select.form-control {
 }
 .gallery h4 {
   font-size: 22px;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 25px;
   display: block;
   text-align: center;
@@ -1595,7 +1624,7 @@ body,
 
 h4 {
   font-size: 13px !important;
-  line-height: 1.25
+  line-height: 1.25;
 }
 
 .single-service {
@@ -1649,7 +1678,7 @@ h4 {
   border-top: 1px solid #CCC6C6;
 }
 
-.dropdown-service .dropdown-menu li {
+.dropdown-service .dropdown-menu a li {
   line-height: 24px;
   font-size: 15px;
   /*width: 200px;*/
@@ -1658,6 +1687,14 @@ h4 {
   white-space: nowrap;
 }
 
+.dropdonw-menu-mobile li a{
+  color: #777;
+  font-size: 18px;
+}
+.dropdonw-menu-mobile li a:hover{
+  color: #c64d5e;
+  transition: 0.5s;
+}
 
 .dropdown-title {
   display: inline-block;
@@ -1692,8 +1729,6 @@ h4 {
   margin-bottom: -3px;
   margin-left: -2px;
 }
-
-
 
 .btn-team {
   width: 100%;
@@ -1812,10 +1847,6 @@ responsive area qwe
   .info-detail ul li {
     font-size: 14px;
   }
-
-  .phoneList {
-    text-align: left;
-  }
   .contact-info {
       padding-left: 40px;
   }
@@ -1931,7 +1962,7 @@ responsive area qwe
     padding-bottom: 60px;
   }
 
-  .title-main-w3ls h4 {
+  .title-main-w3ls p {
     margin-bottom: 45px;
   }
 
@@ -1960,10 +1991,12 @@ responsive area qwe
 
   }
 
+  .navbar-default .navbar-nav>li>p {
+    color: #777;
+  }
   .navbar-default .navbar-nav>li>a {
     color: #777;
   }
-
   h4 {
       font-size: 21px !important;
   }
@@ -2002,8 +2035,10 @@ responsive area qwe
     font-size: 13px;
   }
 }
-
 @media (min-width: 992px) {
+  .nav-bar{
+    display: none;
+  }
   /*.service h2 {
       margin-top: 95px;
   }*/
@@ -2012,11 +2047,20 @@ responsive area qwe
     margin-top: 45px;
   }
 
+  .mainMenu > li:nth-child(5) p {
+    padding-right: 33px;
+    border-right: 1px solid #D6D6D6;
+  }
   .mainMenu > li:nth-child(5) a {
     padding-right: 33px;
     border-right: 1px solid #D6D6D6;
   }
 
+  .mainMenu > li:last-child p {
+    padding-right: 0;
+    padding-left: 33px;
+    border-left: 1px solid #D6D6D6;
+  }
   .mainMenu > li:last-child a {
     padding-right: 0;
     padding-left: 33px;
@@ -2042,7 +2086,7 @@ responsive area qwe
     margin-left: 0
   }
 
-  .phoneList li a {
+  .phoneList li p {
     font-size: 14px
   }
 
@@ -2166,13 +2210,16 @@ responsive area qwe
       .dropdonw-menu-mobile.move{
         display: block;
     }
-    
 }
-@media (min-width: 992px) and (max-width: 1520px) {
-    .navbar-default .navbar-nav>li>a {
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-default .navbar-nav>li>p {
         font-size: 15px;
         padding: 14px 10px;
     }
+    .navbar-default .navbar-nav>li>a {
+      font-size: 15px;
+      padding: 14px 10px;
+  }
     .carousel-caption h1 {
         font-size: 120px;
     }
@@ -2191,7 +2238,6 @@ responsive area qwe
     .person-detail p {
         font-size: 12px;
     }
-    
 }
 
 /* sm */
@@ -2240,84 +2286,3 @@ responsive area qwe
     font-size: 16px;
     margin-bottom: 0px !important;
 }
-main {
-  position: relative;
-  top: 0px;
-  
-  
-}
-.main-nav {
-  width: 200px;
- margin: 20px 0 150px 190px;
-}
-.main-nav a {
-  
-  font-size: 23px;
-  line-height: 2.5;
-  cursor: pointer;
-  border-radius: 10px;
-  color: #777;
-}
-.main-nav a:hover{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  transition: .3s ease-in-out;
-  text-decoration: underline;
-}
-.work-img {
-  margin: 120px 0 0 190px ;
-}
-.main-text {
-  width: 750px;
-  position: absolute;
-  top: 50px;
-  height: 550px;
-  /* border: 1px solid #000; */
-}
-
-.main-text h2{
-  font-size: 80px;
-}
-.main-text p {
-  margin-top: 150px;
-  margin-bottom: 70px;
-  font-size: 27px;
-  word-spacing: 5px;
-  color: #000;
-}
-@media (min-width: 998px ) and (max-width:1520px){
-  .main-text{
-    margin-left:500px;
-  }
-}
-@media (min-width:1520px) and (max-width: 1700px){
-  .main-text{
-    right: 300px;
-  }
-}
-@media (min-width:1700px) and (max-width: 1800px){
-  .main-text{
-    right: 400px;
-  }
-}
-@media (min-width:1802px) and (max-width: 2000px){
-  .main-text{
-    right: 500px;
-  }
-}
-@media (min-width: 992px){ 
-#back-to-top {
-    bottom: 115px;
-    right: 40px;
-}
-}
-#back-to-top {
-    position: fixed;
-    z-index: 999;
-    display: none;
-    bottom: 120px;
-    right: 40px;
-    cursor: pointer;
-}
-
-

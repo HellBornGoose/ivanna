@@ -14,49 +14,80 @@
     <title>Пилинг</title>
 </head>
 <body>
-    <header id="header" class="top-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3 header-logo">
-					<a href="http://ivanna.zp.ua"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
-				</div>
+   <header class="top-header">
+      <div class="header-mobile-bgr">
+      <div class="container">
+         <nav class="navbar navbar-default">
+            <div class="nav-bar">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="container" id="btn-header">
+                  <div class="row">
+                     <div class="col-xs-9">
+                        <div class="logo">
+                           <img src="img/logo.png" alt="" class="img-responsive logo">
+                        </div>
+                     </div>
+                     <div class="col-xs-2" >
+                        <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+                        <label for="checkbox3" style="padding-left: 30px;">
+                           <div id="menu1" class="hamburger hamburger3">
+                              <span class="bar bar1"></span>
+                              <span class="bar bar2"></span>
+                              <span class="bar bar3"></span>
+                              <span class="bar bar4"></span>
+                           </div>
+                        </label>
+                     </div>
+                  <ul class="phoneList visible-xs visible-sm">
+                     <li><p href="tel:0964777170" class="phone">096-47-77-170</p></li>
+                     <li><p href="tel:0996708042" class="phone">099-67-08-042</p></li>
+                     <li><p href="tel:0730727266" class="phone">073-07-27-266</p></li>
+                  </ul>
+                  </div>
 
-				<div class="col-md-9">
-					<nav class="navbar navbar-default">
-					  <div class="nav-bar">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					    </div>
+               </div>
+            </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <span class="close-icon visible-xs" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></span>
+                  <a href="./index.html" class="logo"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
+                  <ul class="nav navbar-nav navbar-right mainMenu">
+                     <li><a class="menu active" href="./index.html#home">Новости</a></li>
+                     <li><a class="menu" href="./index.html#service">Услуги</a></li>
+                     <li><a class="menu" href="./index.html#team">Команда</a></li>
+                     <li><a class="menu" href="./index.html#online">Онлайн запись</a></li>
+                     <li><p class="menu" ><a href="./gallery.html">Галерея</a></p></li>
+                     <ul class="phoneList hidden-xs hidden-sm">
+                        <li><p href="tel:0964777170" class="phone">096-47-77-170</p></li>
+                        <li><p href="tel:0996708042" class="phone">099-67-08-042</p></li>
+                        <li><p href="tel:0730727266" class="phone">073-07-27-266</p></li>
+                     </ul>
+                     <li ><a class="menu" href="./index.html#contact" >Контакты</a></li>
+                  </ul>
+               </div>
+               <!-- /navbar-collapse -->
+               </nav>
+            </div>
+            <!-- / .container-fluid -->
 
-					    <!-- Collect the nav links, forms, and other content for toggling -->
-					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-					      <ul class="nav navbar-nav navbar-right mainMenu">
-                        <li><a class="menu active" href="http://ivanna.zp.ua" >Новости</a></li>
-                        <li><a class="menu" href="http://ivanna.zp.ua">Услуги</a></li>
-                        <li><a class="menu" href="http://ivanna.zp.ua">Команда</a></li>
-                        <li><a class="menu" href="http://ivanna.zp.ua">Онлайн запись</a></li>
-                        <li><a class="menu" href="http://ivanna.zp.ua/gallery.html">Галерея</a></li>
-                        <ul class="phoneList">
-                           <li><a href="tel:0964777170" class="phone">096-47-77-170</a></li>
-                           <li><a href="tel:0996708042" class="phone">099-67-08-042</a></li>
-                           <li><a href="tel:0730727266" class="phone">073-07-27-266</a></li>
-                        </ul>
-                        <li><a class="menu" href="http://ivanna.zp.ua">Контакты</a></li>
-                      </ul>
-					    </div><!-- /navbar-collapse -->
-					  </div><!-- / .container-fluid -->
-					</nav>
-				</div>
-			</div>
-		</div>
-    </header> <!-- end of header area -->
+         <div class="container">
+            <div class="row">
+               <div class="dropdonw-menu-mobile" id="hidediv">
+                  <div class="top-menu">
+                     <ul class="nav navbar-nav navbar-right mainMenu">
+                        <li ><a class="menu active" href="./index.html#home" >Новости</a></li>
+                        <li><a class="menu" href="./index.html#service">Услуги</a></li>
+                        <li><a class="menu" href="./index.html#team">Команда</a></li>
+                        <li><a class="menu" href="./index.html#online">Онлайн запись</a></li>
+                        <li><p class="menu"><a href="./gallery.html"> Галерея</a></p></li>
+                        <li style="margin-bottom: 18px;"><a class="menu" href="./index.html#contact">Контакты</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
     <main>
             <img style="width: 250px; height:250px;" src="./img/1.jpg" alt="" class="work-img">
             <nav class="main-nav">
