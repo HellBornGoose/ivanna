@@ -106,7 +106,7 @@
                      </div>
 
                   </div>
-                  </div
+               </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <span class="close-icon visible-xs" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></span>

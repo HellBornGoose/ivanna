@@ -1,9 +1,10 @@
-﻿﻿@media (min-width: 300px) and (max-width: 370px) {
+﻿﻿
+@media (min-width: 300px) and (max-width: 370px) {
    .person-detail{
     height: 180px;
    }
 } 
-﻿@media (min-width: 1366px) {
+@media (min-width: 1366px) {
   .container {
     width: 1300px;
   }
@@ -27,6 +28,7 @@
   #btn-header {
     display: none;
   }
+  
 
 }
 @media only screen and (max-width : 768px) {
@@ -259,8 +261,13 @@ ul.nav {
     -ms-transition: all .5s ease 0s;
     color: #333;
 }
-.navbar-default .navbar-nav>li>p:hover {
-    color: #42b3e5;
+.navbar-default .navbar-nav>li>a {
+  transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  -ms-transition: all .5s ease 0s;
+  color: #333;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000;
@@ -270,7 +277,9 @@ ul.nav {
     border-color: #fff;
     margin: 4px 0 0;
 }
-
+.mainMenu li p a{
+  color: #777;
+}
 /*slider area*/
 
 .slider-row {
@@ -1064,7 +1073,7 @@ footer {
 #back-to-top i:hover{background:#333;}
 .tooltip {
    visibility: visible !important;
-   display: block; !important;
+   display: block !important;
 }
 .tooltip .tooltip-inner  {
   background-color: #545151;
@@ -1098,7 +1107,6 @@ footer {
 }
 .wthree-text ul li {
     display: inline-block;
-    float: left;
 }
 .wthree-text ul li:nth-child(2) {
     float: right;
@@ -1702,10 +1710,6 @@ h4 {
   margin-left: -2px;
 }
 
-.btn-team.collapsed .nav-arrow {
-
-}
-
 .btn-team {
   width: 100%;
   padding: 5px 15px;
@@ -1822,10 +1826,6 @@ responsive area qwe
 
   .info-detail ul li {
     font-size: 14px;
-  }
-
-  .phoneList {
-    text-align: left;
   }
   .contact-info {
       padding-left: 40px;
@@ -1971,10 +1971,12 @@ responsive area qwe
 
   }
 
+  .navbar-default .navbar-nav>li>p {
+    color: #777;
+  }
   .navbar-default .navbar-nav>li>a {
     color: #777;
   }
-
   h4 {
       font-size: 21px !important;
   }
@@ -2013,8 +2015,10 @@ responsive area qwe
     font-size: 13px;
   }
 }
-
 @media (min-width: 992px) {
+  .nav-bar{
+    display: none;
+  }
   /*.service h2 {
       margin-top: 95px;
   }*/
@@ -2023,12 +2027,12 @@ responsive area qwe
     margin-top: 45px;
   }
 
-  .mainMenu > li:nth-child(5) a {
+  .mainMenu > li:nth-child(5) p {
     padding-right: 33px;
     border-right: 1px solid #D6D6D6;
   }
 
-  .mainMenu > li:last-child a {
+  .mainMenu > li:last-child p {
     padding-right: 0;
     padding-left: 33px;
     border-left: 1px solid #D6D6D6;
@@ -2053,7 +2057,7 @@ responsive area qwe
     margin-left: 0
   }
 
-  .phoneList li a {
+  .phoneList li p {
     font-size: 14px
   }
 
@@ -2179,10 +2183,14 @@ responsive area qwe
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-    .navbar-default .navbar-nav>li>a {
+    .navbar-default .navbar-nav>li>p {
         font-size: 15px;
         padding: 14px 10px;
     }
+    .navbar-default .navbar-nav>li>a {
+      font-size: 15px;
+      padding: 14px 10px;
+  }
     .carousel-caption h1 {
         font-size: 120px;
     }

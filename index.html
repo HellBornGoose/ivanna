@@ -99,9 +99,9 @@
                            </label>
                         </div>
                      <ul class="phoneList visible-xs visible-sm">
-                        <li><a href="tel:0964777170" class="phone">096-47-77-170</a></li>
-                        <li><a href="tel:0996708042" class="phone">099-67-08-042</a></li>
-                        <li><a href="tel:0730727266" class="phone">073-07-27-266</a></li>
+                        <li><p href="tel:0964777170" class="phone">096-47-77-170</p></li>
+                        <li><p href="tel:0996708042" class="phone">099-67-08-042</p></li>
+                        <li><p href="tel:0730727266" class="phone">073-07-27-266</p></li>
                      </ul>
                      </div>
 
@@ -122,7 +122,7 @@
                            <li><p href="tel:0996708042" class="phone">099-67-08-042</p></li>
                            <li><p href="tel:0730727266" class="phone">073-07-27-266</p></li>
                         </ul>
-                        <li ><p class="menu" href="#contact" >Контакты</p></li>
+                        <li ><p class="menu" onclick="scrollToContacts()" >Контакты</p></li>
                      </ul>
                   </div>
                   <!-- /navbar-collapse -->
@@ -132,15 +132,15 @@
 
             <div class="container">
                <div class="row">
-                  <div class="dropdonw-menu-mobile" id="hidediv">s
+                  <div class="dropdonw-menu-mobile" id="hidediv">
                      <div class="top-menu">
                         <ul class="nav navbar-nav navbar-right mainMenu">
-                           <li><p class="menu active" onclick="scrollToNews()" >Новости</p></li>
-                           <li><p class="menu" href="#service">Услуги</p></li>
-                           <li><p class="menu" href="#team">Команда</p></li>
-                           <li><p class="menu" href="#online">Онлайн запись</p></li>
-                           <li><p class="menu" href="./gallery.html">Галерея</p></li>
-                           <li style="margin-bottom: 18px;"><p class="menu" href="#contact">Контакты</p></li>
+                           <li><p class="menu active" onclick="scrollToNews()">Новости</p></li>
+                           <li><p class="menu" onclick="scrollToService()">Услуги</p></li>
+                           <li><p class="menu" onclick="scrollToTeam()">Команда</p></li>
+                           <li><p class="menu" onclick="scrollToOnline()">Онлайн запись</p></li>
+                           <li><p class="menu" ><a href="./gallery.html"> Галерея</a></p></li>
+                           <li style="margin-bottom: 18px;"><p class="menu" onclick="scrollToContacts()" >Контакты</p></li>
                         </ul>
                      </div>
                   </div>
@@ -170,6 +170,12 @@
         }
         function scrollToOnline() {
             const element = document.getElementById("online");
+            element.scrollIntoView({
+            behavior: 'smooth'
+          })
+        }
+        function scrollToContacts() {
+            const element = document.getElementById("contact");
             element.scrollIntoView({
             behavior: 'smooth'
           })
@@ -543,7 +549,7 @@
                      </div>
                      <div class="col-xs-6">
                         <div class="person">
-                           <img class="img-responsive" src="img\member4.jpeg" alt="member-4">
+                           <img class="img-responsive" src="./img/member4.jpg" alt="member-4">
                         </div>
                         <div class="person-detail">
                            <div class="arrow-bottom"></div>
@@ -737,7 +743,7 @@
                         </div>
                      </div>
                      <div class="clearfix"> </div>
-                     <input type="submit" onclick="ga ('send', 'event', ‘online’, 'online_zakaz');"
+                     <input type="submit" onclick="ga ('send', 'event', 'online', 'online_zakaz');"
                      onclick="ym(52951456, 'reachGoal', 'online_zakaz'); return true;" value="Отправить" class="black-btn">
                   </form>
                </div>
