@@ -545,7 +545,7 @@ h2 {
 .single-service h3 {
     margin-top: 20px;
     color: #737373;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     border-bottom: 1px solid #c64d5e;
     font-size: 20px
 }
@@ -2048,11 +2048,10 @@ responsive area qwe
   }
 
   .mainMenu > li:nth-child(5) p {
-    padding-right: 33px;
+    
     border-right: 1px solid #D6D6D6;
   }
   .mainMenu > li:nth-child(5) a {
-    padding-right: 33px;
     border-right: 1px solid #D6D6D6;
   }
 
@@ -2212,6 +2211,10 @@ responsive area qwe
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+      width: 1010px;
+    }
+    
     .navbar-default .navbar-nav>li>p {
         font-size: 15px;
         padding: 14px 10px;
